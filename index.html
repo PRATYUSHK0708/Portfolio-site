@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emad Sharique - Full Stack Developer Portfolio">
+    <meta name="author" content="Emad Sharique">
+    <title>Pratyush Kumar | BCA Graduate & Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html">Pratyush kumar</a>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="#work">Work</a></li> -->
+                <li>
+                    <a href="https://github.com" target="_blank" class="github-link" aria-label="GitHub Profile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile menu toggle -->
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Landing Section -->
+    <section class="hero-section">
+        <div class="content-container">
+            <div class="hero-grid">
+
+                <!-- Left side - Text content -->
+                <div class="hero-text-content">
+                    <p class="intro-text">Hello, I'm Pratyush</p>
+                    <h1 class="main-heading">
+                        <span id="typedText"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <button class="cta-button" onclick="scrollToContact()">
+                        Contact Me
+                    </button>
+                </div>
+
+                <!-- Right side - Profile image -->
+                <div class="hero-image-wrapper">
+                    <div class="profile-image">
+                        <!-- Placeholder for profile photo -->
+                        <div class="image-frame">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Cards -->
+    <section class="main-content-section">
+        <div class="content-container">
+
+            <div class="card-grid">
+
+                <!-- About Card -->
+                <div class="content-card" data-page="about.html">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">About</h3>
+                    <p class="card-description">
+                        Learn about my journey, skills, and what drives my passion for web development
+                    </p>
+                    <a href="about.html" class="card-link">
+                        Learn More <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Education Card -->
+                <div class="content-card" data-page="education.html">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Education</h3>
+                    <p class="card-description">
+                        Explore my academic background and certifications in computer science and web technologies
+                    </p>
+                    <a href="education.html" class="card-link">
+                        View Details <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="content-card" data-page="projects.html">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Projects</h3>
+                    <p class="card-description">
+                        Discover the web applications and projects I've built using modern technologies
+                    </p>
+                    <a href="projects.html" class="card-link">
+                        See Projects <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Internship Card -->
+                <div class="content-card" data-page="internship.html">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Internship</h3>
+                    <p class="card-description">
+                        Check out my professional experience and internships in full-stack development
+                    </p>
+                    <a href="internship.html" class="card-link">
+                        Read More <span class="arrow">→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-showcase">
+        <div class="content-container">
+            <h2 class="section-heading">Skills & Technologies</h2>
+
+            <div class="skills-wrapper">
+                <span class="skill-badge">Front-End</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">HTML/CSS</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Data Structures</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="content-container">
+            <p class="footer-text">&copy; 2025 Pratyush Kumar. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:emad@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
